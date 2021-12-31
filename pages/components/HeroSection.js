@@ -10,14 +10,16 @@ export default function HeroSection() {
     const t = locale === 'fr' ? fr : en
 
     return (
-        <div className="py-3 rounded-md bg-slate-100 dark:bg-slate-700">
+        <div className="py-3 rounded-md customBackground dark:bg-slate-700 text-white">
 
             <Navbar />
 
             <div className='text-center mt-8 mb-8'>
-                <h1 className='text-3xl'>RINCON-BRAZILLIER Johan</h1>
-                <h2 className='text-2xl'>{t.job}</h2>
-                <img className='w-1/4 mt-5 inline bg-orange-300 mr-2 rounded-full borderAvatar' src="/images/hey.png" alt="avatar" />
+                <img className='w-1/6 m-auto mb-5' src="/images/html.png" alt="html logo" />
+                <h1 className='big-title font-extrabold'>RINCON-BRAZILLIER Johan</h1>
+                <h2 className='big-title2 mb-8'>{t.job}</h2>
+                <p className='font-extrabold'>{t.catchphrase}</p>
+                <p className='font-extrabold'>{t.catchphrase2}</p>
             </div>
 
         </div>
