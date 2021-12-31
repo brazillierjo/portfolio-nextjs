@@ -7,4 +7,6 @@ export default {
     projects: 'Mes projets',
     reco: 'Recommendations',
     contact: 'Contact',
+    //hero section
+    job: 'Développeur Web',
 }
