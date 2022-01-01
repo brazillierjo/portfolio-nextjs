@@ -1,11 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class CV extends Component {
-    render() {
-        return (
-            <div>
-                CV
-            </div>
-        )
-    }
+export default function CV() {
+    return (
+        <div>
+            CV
+        </div>
+    )
 }

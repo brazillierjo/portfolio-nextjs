@@ -20,13 +20,21 @@ html, body, footer {
 }
 
 .big-title {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
 }
 
 .big-title2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
-.customBackground {
-    background-color: rgb(22, 28, 45) !important;
+.hero-image {
+    background-image: url('/images/hero-section-image.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.inter {
+    font-family: 'Inter', 'Arial Narrow Bold', sans-serif;
 }
