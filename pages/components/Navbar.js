@@ -1,6 +1,5 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Disclosure } from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { useRouter } from 'next/router'
 import fr from '../../languages/fr'
 import en from '../../languages/en'
@@ -32,7 +31,6 @@ export default function Example() {
                             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                                 <div className="hidden sm:block sm:ml-6">
                                     <div className="flex space-x-8">
-                                        <a className='hover:bg-orange-400 rounded-xl px-2 py-1' href="#hello">{t.hello}</a>
                                         <a className='hover:bg-orange-400 rounded-xl px-2 py-1' href="#whoami">{t.whoami}</a>
                                         <a className='hover:bg-orange-400 rounded-xl px-2 py-1' href="#skills">{t.skills}</a>
                                         <a className='hover:bg-orange-400 rounded-xl px-2 py-1' href="#cv">{t.cv}</a>
@@ -45,21 +43,20 @@ export default function Example() {
 
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <span className="sr-only">Open user menu</span>
-                                <img className='h-20 w-20 bg-orange-300 mr-2 rounded-full borderAvatar' src="/images/avatar.png" alt="avatar" />
+                                <img className='h-16 md:h-28 md:w-28 bg-orange-300 mr-2 rounded-full borderAvatar' src="/images/avatar.png" alt="avatar" />
                             </div>
                         </div>
                     </div>
 
                     <Disclosure.Panel className="sm:hidden">
-                        <div className="px-2 pt-2 pb-3">
-                            <a className='hover:underline' href="">{t.hello}</a>
-                            <a className='hover:underline' href="">{t.whoami}</a>
-                            <a className='hover:underline' href="">{t.skills}</a>
-                            <a className='hover:underline' href="">{t.cv}</a>
-                            <a className='hover:underline' href="">{t.projects}</a>
-                            <a className='hover:underline' href="">{t.reco}</a>
-                            <a className='hover:underline' href="">{t.contact}</a>
-                        </div>
+                        <ul className="text-center px-4 py-4 rounded-3xl">
+                            <li className='my-2' href="#whoami">{t.whoami}</li>
+                            <li className='my-2' href="#skills">{t.skills}</li>
+                            <li className='my-2' href="#cv">{t.cv}</li>
+                            <li className='my-2' href="#projects">{t.projects}</li>
+                            <li className='my-2' href="#reco">{t.reco}</li>
+                            <li className='my-2' href="#contact">{t.contact}</li>
+                        </ul>
                     </Disclosure.Panel>
                 </>
             )

@@ -10,7 +10,8 @@ export default function HeroSection() {
     const t = locale === 'fr' ? fr : en
 
     return (
-        <div className="py-3 rounded-md hero-image">
+        //replace 'forest' by hero-image for static picture
+        <div className="py-3 rounded-md forest">
 
             <Navbar />
 
