@@ -12,7 +12,7 @@ export default function Skills() {
         <div id='skills' className='my-8'>
             <h1 className='text-center text-3xl'>{t.skills}</h1>
 
-            <div className='flex flex-wrap justify-center md:justify-between md:w-3/5 mx-auto mt-8'>
+            <div className='flex flex-wrap justify-center md:justify-around md:w-3/5 mx-auto mt-8'>
                 <img className='logo-skills' src="/images/logos/HTML.png" alt="HTML logo" />
                 <img className='logo-skills' src="/images/logos/CSS.png" alt="CSS logo" />
                 <img className='logo-skills' src="/images/logos/JavaScript.png" alt="JavaScript logo" />

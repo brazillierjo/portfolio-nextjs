@@ -42,20 +42,26 @@ export default function Example() {
                             </div>
 
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                                <span className="sr-only">Open user menu</span>
-                                <img className='h-16 md:h-28 md:w-28 bg-orange-300 mr-2 rounded-full borderAvatar' src="/images/avatar.png" alt="avatar" />
+                                <span className="sr-only"></span>
+                                <p id='weather' className='mx-3'>METEO</p>
+                                <img className='float h-16 md:h-28 md:w-28 bg-orange-300 mr-2 rounded-full borderAvatar' src="/images/avatar.png" alt="avatar" />
                             </div>
                         </div>
                     </div>
 
                     <Disclosure.Panel className="sm:hidden">
-                        <ul className="text-center px-4 py-4 rounded-3xl">
-                            <li className='my-2' href="#whoami">{t.whoami}</li>
-                            <li className='my-2' href="#skills">{t.skills}</li>
-                            <li className='my-2' href="#cv">{t.cv}</li>
-                            <li className='my-2' href="#projects">{t.projects}</li>
-                            <li className='my-2' href="#reco">{t.reco}</li>
-                            <li className='my-2' href="#contact">{t.contact}</li>
+                        <ul className="text-center py-4 rounded-3xl">
+                            <li className='my-1'><a href="#whoami">{t.whoami}</a></li>
+                            <hr className='hr-mobile' />
+                            <li className='my-1'><a href="#skills">{t.skills}</a></li>
+                            <hr className='hr-mobile' />
+                            <li className='my-1'><a href="#cv">{t.cv}</a></li>
+                            <hr className='hr-mobile' />
+                            <li className='my-1'><a href="#projects">{t.projects}</a></li>
+                            <hr className='hr-mobile' />
+                            <li className='my-1'><a href="#reco">{t.reco}</a></li>
+                            <hr className='hr-mobile' />
+                            <li className='my-1'><a href="#contact">{t.contact}</a></li>
                         </ul>
                     </Disclosure.Panel>
                 </>

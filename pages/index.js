@@ -32,29 +32,26 @@ export default function Home() {
       <main className={isDark ? 'dark' : ''}>
         <div className='dark:bg-slate-900 dark:text-white'>
 
-          <div className='flex text-xs justify-evenly p-1'>
-            <div className='space-x-8 p-1'>
-              <a className='mx-5' href='mailto:j.brazillier@gmail.com'>j.brazillier@gmail.com</a>
-              <a className='mx-5' href='tel:+33638027649'>+33(0)6.38.02.76.49</a>
+          <div className='flex justify-center text-xs'>
+            <a className='my-1 mx-3' href='mailto:j.brazillier@gmail.com'>j.brazillier@gmail.com</a>
+            <a className='my-1 mx-3' href='tel:+33638027649'>+33(0)6.38.02.76.49</a>
+            <div className='flex justify-center mx-3'>
+              {isDark ? <img className='dark-icons' src="/images/sun.gif" alt="" /> : ""}
+              <Switch onClick={() => !setIsDark(!isDark)} label='night-mode' color='secondary' size='small' />
+              {isDark ? "" : <img className='dark-icons' src="/images/moon.gif" alt="" />}
             </div>
-
-            <div className='flex space-x-8'>
-
-              <div className='flex justify-center'>
-                <Switch onClick={() => !setIsDark(!isDark)} label='night-mode' color='secondary' size='small' />
-                {isDark ? <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg> : <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>}
-              </div>
-
-              <div className='flex'>
-                <label htmlFor="lang"></label>
-                <select className='dark:bg-slate-900 dark:text-white' name="lang" id="lang">
-                  <option value="fr" onChange={() => setIsFrench(true)}>Français</option>
-                  <option value="en-US" onChange={() => setIsFrench(false)}>English</option>
-                </select>
-              </div>
-
+            <div className='flex mx-3'>
+              <label htmlFor="lang"></label>
+              <select className='dark:bg-slate-900 dark:text-white' name="lang" id="lang">
+                <option value="fr" onChange={() => setIsFrench(true)}>FR 🇫🇷</option>
+                <option value="en" onChange={() => setIsFrench(false)}>EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
+              </select>
             </div>
           </div>
+
+
+
+
 
           <HeroSection />
           <Presentation />
@@ -76,13 +73,13 @@ export default function Home() {
                   v44h-352z" />
             </defs>
             <g class="parallax1">
-              <use xlinkHref="#gentle-wave" x="50" y="3" fill="#f461c1" />
+              <use xlinkHref="#gentle-wave" x="50" y="3" fill="#8be091" />
             </g>
             <g class="parallax2">
               <use xlinkHref="#gentle-wave" x="50" y="0" fill="#4579e2" />
             </g>
             <g class="parallax3">
-              <use xlinkHref="#gentle-wave" x="50" y="9" fill="#8be091" />
+              <use xlinkHref="#gentle-wave" x="50" y="9" fill="#f461c1" />
             </g>
           </svg>
         </div>

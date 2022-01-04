@@ -11,12 +11,41 @@ html, body, footer {
     font-family: 'SFPro';
 }
 
+.dark-icons {
+	width: 25px;
+	height: 25px;
+}
+
 /* NAV */
 #customNav {
     background-color: rgba(255,255,255,1);
 }
 .borderAvatar {
     border: 3px solid white;
+}
+
+.float {
+	animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(-5px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(5px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(-5px);
+	}
+}
+
+.hr-mobile {
+	width: 50%;
+	margin: auto;
+	color: rgba(128, 128, 128, 0.349);
 }
 
 
@@ -53,17 +82,21 @@ html, body, footer {
     cursor: pointer;
 }
 .logo-skills {
-	height: 100px;
-	margin: 15px;
-	background-color: white;
-	padding: 6px;
-	border-radius: 10px;
+	height: 120px;
+	background-color: rgb(255, 255, 255);
+	margin: 6px;
+	padding: 8px;
+	border-radius: 6px;
+	transition: transform 250ms;
+}
+.logo-skills:hover {
+	transform: translateY(-10px);
 }
 
 
 /* HERO ANIMATION */
 .forest {
-	height: 600px;
+	height: 500px;
 	width: 100%;
 	background-color: hsla(200,40%,30%,.4);
 	background-image:		
