@@ -58,7 +58,7 @@ export default function Home() {
 
           <CV />
           <Skills />
-          <svg class="editorial"
+          <svg className="editorial"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28 "
@@ -72,13 +72,13 @@ export default function Home() {
                   58 18 88 18
                   v44h-352z" />
             </defs>
-            <g class="parallax1">
+            <g className="parallax1">
               <use xlinkHref="#gentle-wave" x="50" y="3" fill="#8be091" />
             </g>
-            <g class="parallax2">
+            <g className="parallax2">
               <use xlinkHref="#gentle-wave" x="50" y="0" fill="#4579e2" />
             </g>
-            <g class="parallax3">
+            <g className="parallax3">
               <use xlinkHref="#gentle-wave" x="50" y="9" fill="#f461c1" />
             </g>
           </svg>
