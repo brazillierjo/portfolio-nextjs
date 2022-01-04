@@ -36,9 +36,9 @@ export default function Home() {
             <a className='my-1 mx-3' href='mailto:j.brazillier@gmail.com'>j.brazillier@gmail.com</a>
             <a className='my-1 mx-3' href='tel:+33638027649'>+33(0)6.38.02.76.49</a>
             <div className='flex justify-center mx-3'>
-              {isDark ? <img className='dark-icons' src="/images/sun.gif" alt="" /> : ""}
+              {isDark ? <img className='dark-icons' src="/assets/sun.gif" alt="" /> : ""}
               <Switch onClick={() => !setIsDark(!isDark)} label='night-mode' color='secondary' size='small' />
-              {isDark ? "" : <img className='dark-icons' src="/images/moon.gif" alt="" />}
+              {isDark ? "" : <img className='dark-icons' src="/assets/moon.gif" alt="" />}
             </div>
             <div className='flex mx-3'>
               <label htmlFor="lang"></label>
@@ -57,6 +57,7 @@ export default function Home() {
           <Presentation />
 
           <CV />
+          <hr />
           <Skills />
           <svg className="editorial"
             xmlns="http://www.w3.org/2000/svg"

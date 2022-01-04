@@ -16,6 +16,26 @@ html, body, footer {
 	height: 25px;
 }
 
+hr {
+    border: none;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+hr:after {
+    background: #fff;
+    content: '👨‍💻';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
 /* NAV */
 #customNav {
     background-color: rgba(255,255,255,1);
@@ -59,7 +79,7 @@ html, body, footer {
 
 /* HERO SECTION */
 .hero-image {
-    background-image: url('/images/hero-section-image.jpeg');
+    background-image: url('/assets/hero-section-image.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

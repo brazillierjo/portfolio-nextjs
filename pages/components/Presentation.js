@@ -12,7 +12,7 @@ export default function Presentation() {
     return (
         <div id='whoami' className='md:flex md:w-4/5 mx-auto md:p-12'>
             <div className='md:w-1/3 m-5'>
-                <img className='hidden md:block rounded-md' src="/images/profile.jpg" alt="Profile picture" />
+                <img className='hidden md:block rounded-md' src="/assets/profile.jpg" alt="Profile picture" />
             </div>
             <div className='md:w-2/3 m-5'>
                 <h1 className='big-title2 font-extrabold'>RINCON-BRAZILLIER Johan</h1>
@@ -28,13 +28,13 @@ export default function Presentation() {
 
                 <div className='flex space-x-4 mt-12'>
                     <a target="_blank" href="https://github.com/brazillierjo?tab=repositories">
-                        <img className='icons-size' src="/images/svg/github-brands.svg" alt="github icon" />
+                        <img className='icons-size' src="/assets/svg/github-brands.svg" alt="github icon" />
                     </a>
                     <a target="_blank" href="https://www.linkedin.com/in/johan-brazillier-9b917a174/">
-                        <img className='icons-size' src="/images/svg/linkedin-brands.svg" alt="linkedin icon" />
+                        <img className='icons-size' src="/assets/svg/linkedin-brands.svg" alt="linkedin icon" />
                     </a>
                     <a target="_blank" href="https://bzrjoh.notion.site/RINCON-BRAZILLIER-Johan-219bf0d4b31449faabf1ba6343bccc7b">
-                        <img className='icons-size' src="/images/svg/notion-brands.svg" alt="notion icon" />
+                        <img className='icons-size' src="/assets/svg/notion-brands.svg" alt="notion icon" />
                     </a>
                 </div>
             </div>

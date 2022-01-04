@@ -14,5 +14,8 @@ export default {
     presentation: "Currently Web Developer for an insurance agency and freelancer, connected to the Web by passion. I am an organized person who pays a lot of attention to details. Winner of the contest 'break the codes' (2020), here is my portfolio.",
     emailme: '📩 Contact me by email :',
     phoneme: '📱 Contact me by phone :',
-    //skills section
+    // CV section
+    download: 'Download my CV',
+    // skills section
+    skills2: 'What are my skills ?',
 }

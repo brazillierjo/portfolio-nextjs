@@ -14,6 +14,8 @@ export default {
     presentation: "Actuellement Développeur Web pour une agence de courtage d\'assurance et développeur free-lance, connecté au Web par passion. Je suis une personne organisée qui prête beaucoup d\'attention au détail. Lauréat du concours qui casse les codes (2020), voici mon portfolio.",
     emailme: '📩 Me contacter par mail :',
     phoneme: '📱 Me contacter par téléphone :',
-    //skills section
-    skills: 'Mes compétences',
+    // CV section
+    download: 'Télécharger mon CV',
+    // skills section
+    skills2: 'Quelles sont mes compétences ?',
 }
