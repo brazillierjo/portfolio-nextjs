@@ -16,6 +16,9 @@ export default {
     phoneme: '📱 Me contacter par téléphone :',
     // CV section
     download: 'Télécharger mon CV',
+    cv_presentation: 'J\'ai d\'abord arrêté les études après un Baccalauréat Technologique. De petits boulots en petits boulots, j\'ai rapidement compris que ce contexte ne me suffirait pas. J\'ai donc repris mes études à 21 ans pour une licence en e-commerce ! Ces études m\'ont permis d\'exercer pendant 6 ans en tant que SEO ! Cette expérience m\'a appris le fonctionnement du monde professionnel, le travail en équipe ainsi que le poids des responsabilités mais aussi la gestion d\'un back office et d\'un référencement naturel.',
+    cv_presentation2: 'En tant que SEO, travailler en étroite collaboration avec des développeurs m\'a donné envie de me plonger dans ce monde très technique. Je me suis donc offert une formation bootcamp de 6 mois pour acquérir les bases de la programmation web et de l\'écriture de code. Suite à cela, j\'ai poursuivi mon apprentissage en alternance avec une Licence Intégrateur/Développeur d\'Applications Web et mobile avec spécialité React et NodeJs !',
+    cv_presentation3: 'Aujourd\'hui, je suis développeur full-stack pour une agence de courtage d\'assurance et développeur freelance.',
     // skills section
     skills2: 'Quelles sont mes compétences ?',
 }
