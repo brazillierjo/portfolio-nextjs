@@ -2,7 +2,6 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import fr from '../../languages/fr'
 import en from '../../languages/en'
-import Presentation from './Presentation'
 
 export default function CV() {
     const router = useRouter()
@@ -11,15 +10,19 @@ export default function CV() {
 
     return (
         <div>
-            <div className='text-center'>
-                <a target="_blank" href="/assets/CV-RINCON-BRAZILLIER-Johan.pdf" className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">{t.download}
-                </a>
+            <div className='md:w-2/3 mx-auto mb-12 p-5'>
+                <h1 className='big-title2 text-center my-4'>{t.about}</h1>
+                <p className="p-1 text-justify">{t.cv_presentation}</p>
+                <p className="p-1 text-justify">{t.cv_presentation2}</p>
+                <p className="p-1 text-justify">{t.cv_presentation3}</p>
             </div>
 
             <div>
-                <p className="">{t.cv_presentation}</p>
-                <p className="">{t.cv_presentation2}</p>
-                <p className="">{t.cv_presentation3}</p>
+                <h1 className='big-title2 text-center my-4'>{t.experiences}</h1>
+            </div>
+
+            <div>
+                <h1 className='big-title2 text-center my-4'>{t.diplomas}</h1>
             </div>
         </div>
     )

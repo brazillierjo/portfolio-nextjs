@@ -55,7 +55,7 @@ export default function Home() {
 
           <HeroSection />
           <Presentation />
-
+          <hr />
           <CV />
           <hr />
           <Skills />
