@@ -4,6 +4,7 @@ import Presentation from './components/Presentation'
 import HeroSection from './components/HeroSection'
 import Skills from './components/Skills'
 import CV from './components/CV'
+import Portfolio from './components/Portfolio'
 import Switch from '@mui/material/Switch';
 
 export default function Home() {
@@ -59,6 +60,7 @@ export default function Home() {
           <CV />
           <hr />
           <Skills />
+          <Portfolio />
           <svg className="editorial"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"

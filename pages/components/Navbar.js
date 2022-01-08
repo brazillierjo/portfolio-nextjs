@@ -32,10 +32,9 @@ export default function Example() {
                                 <div className="hidden sm:block sm:ml-6">
                                     <div className="flex space-x-8">
                                         <a className='hover:bg-orange-400 rounded-xl px-2 py-1' href="#whoami">{t.whoami}</a>
-                                        <a className='hover:bg-orange-400 rounded-xl px-2 py-1' href="#skills">{t.skills}</a>
                                         <a className='hover:bg-orange-400 rounded-xl px-2 py-1' href="#cv">{t.cv}</a>
+                                        <a className='hover:bg-orange-400 rounded-xl px-2 py-1' href="#skills">{t.skills}</a>
                                         <a className='hover:bg-orange-400 rounded-xl px-2 py-1' href="#projects">{t.projects}</a>
-                                        <a className='hover:bg-orange-400 rounded-xl px-2 py-1' href="#reco">{t.reco}</a>
                                         <a className='hover:bg-orange-400 rounded-xl px-2 py-1' href="#contact">{t.contact}</a>
                                     </div>
                                 </div>
@@ -52,13 +51,11 @@ export default function Example() {
                         <ul className="text-center py-4 rounded-3xl">
                             <li className='my-1'><a href="#whoami">{t.whoami}</a></li>
                             <hr className='hr-mobile' />
-                            <li className='my-1'><a href="#skills">{t.skills}</a></li>
-                            <hr className='hr-mobile' />
                             <li className='my-1'><a href="#cv">{t.cv}</a></li>
                             <hr className='hr-mobile' />
-                            <li className='my-1'><a href="#projects">{t.projects}</a></li>
+                            <li className='my-1'><a href="#skills">{t.skills}</a></li>
                             <hr className='hr-mobile' />
-                            <li className='my-1'><a href="#reco">{t.reco}</a></li>
+                            <li className='my-1'><a href="#projects">{t.projects}</a></li>
                             <hr className='hr-mobile' />
                             <li className='my-1'><a href="#contact">{t.contact}</a></li>
                         </ul>
