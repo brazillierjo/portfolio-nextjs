@@ -55,4 +55,6 @@ export default {
     diploma6: 'BREVET D\'APTITUDE AUX FONCTIONS D\'ANIMATEUR EN ACCUEILS COLLECTIFS DE MINEURS',
     diploma6period: '2012',
     diploma6place: 'Mairie de La Londe les Maures',
+    // portfolio section
+    waletoo_description: 'Waletoo.fr est une application Web qui va vous aider à gérer vos finances. Simple et efficace. Après avoir créé un compte, il suffit de rentrer ses charges et ses revenus. L\'application génère alors toute sorte de calculs et graphiques ainsi que des conseils pour gérer au mieux vos finances. ⚠️ projet en cours de développement ⚠️',
 }

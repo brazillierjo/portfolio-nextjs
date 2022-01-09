@@ -60,6 +60,7 @@ export default function Home() {
           <CV />
           <hr />
           <Skills />
+          <hr />
           <Portfolio />
           <svg className="editorial"
             xmlns="http://www.w3.org/2000/svg"

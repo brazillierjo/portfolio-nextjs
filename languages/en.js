@@ -55,4 +55,6 @@ export default {
     diploma6: 'CERTIFICATE OF SUITABILITY FOR THE FUNCTIONS OF ANIMATOR IN COLLECTIVES',
     diploma6period: '2012',
     diploma6place: 'Mairie - La Londe les Maures',
+    // portfolio section
+    waletoo_description: 'Waletoo.fr is a web application that will help you manage your finances. Simple and efficient. After having created an account, all you have to do is enter your expenses and incomes. The application then generates all kinds of calculations and graphs as well as advice to better manage your finances. ⚠️ project under development ⚠️ ',
 }
