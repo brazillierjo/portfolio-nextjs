@@ -14,11 +14,9 @@ export default function Home() {
 
   useEffect(() => {
     if (isFrench) {
-      console.log(isFrench)
       setIsFrench(true)
     } else {
       setIsFrench(false)
-      console.log(isFrench)
     }
   }, [isFrench])
 

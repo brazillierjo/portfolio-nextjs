@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import fr from '../../languages/fr'
 import en from '../../languages/en'
@@ -8,50 +8,64 @@ export default function Portfolio() {
     const { locale } = router
     const t = locale === 'fr' ? fr : en
 
-    const loop = []
-    const loopStack = []
-
     const projects = {
-        1: {
-            title: 'Waletoo',
-            description: t.waletoo_description,
-            image: '/assets/projects/waletoo.png',
-            stack: ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'React', 'NodeJs', 'Express', 'MongoDB', 'Mongoose']
-        },
-        2: {
-            title: 'Waletoo',
-            description: t.waletoo_description,
-            image: '/assets/projects/waletoo.png',
-            stack: ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'React', 'NodeJs', 'Express', 'MongoDB', 'Mongoose']
-        },
+        1: [
+            'Waletoo',
+            '(2021)',
+            t.waletoo_description,
+            '/assets/projects/waletoo.png',
+            ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'React', 'NodeJs', 'Express', 'MongoDB', 'Mongoose', 'Heroku'],
+            'https://waletoo.herokuapp.com/',
+        ],
+        2: [
+            'Vitassurance',
+            '(2021)',
+            t.vitassurance_description,
+            '/assets/projects/vitassurance.png',
+            ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'NodeJs', 'Express', 'MySQL', 'OVH'],
+            'https://vitassurance.fr/',
+        ],
+        3: [
+            'Web Calculator',
+            '(2020)',
+            t.calculator_description,
+            '/assets/projects/calculator.png',
+            ['HTML', 'CSS', 'JavaScript'],
+            'https://brazillierjo.github.io/calculator/',
+        ],
+        4: [
+            'Markdown Previewer',
+            '(2020)',
+            t.markdown_description,
+            '/assets/projects/markdown.png',
+            ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap'],
+            'https://brazillierjo.github.io/markdown/',
+        ],
     }
 
-    for (let i = 0; i < projects.length; i++) {
-        loopStack.push(
-            <li className='stack-buttons text-black' key={projects[i].stack[i]}>{projects[i].stack[i]}</li>
-        )
-    }
-
-    for (let i in projects) {
-        loop.push(
-            <div className='w-1/2 p-5 m-5'>
-                <img src={projects[i].image} alt="project image representation" />
-                <h2 className='text-2xl my-3 font-black'>{projects[i].title}</h2>
-                <p>{projects[i].description}</p>
-                <p className='mt-4'>{t.stack}</p>
-                <ul className='flex flex-wrap my-2'>
-                    {loopStack}
-                </ul>
-            </div>
-        )
-    }
 
     return (
-        <>
-            <h1 id='projects' className='big-title2 text-center  my-4'>My personal projects</h1>
-            <div className='flex flex-wrap justify-center'>
-                <p>{loop}</p>
+        <div className='mb-12'>
+            <h1 id='projects' className='big-title2 text-center my-4'>{t.titlePortfolio}</h1>
+            <div className='flex flex-wrap justify-evenly'>
+                {Object.entries(projects).map(([a, b], i) => (
+                    <div className='relative border-white-500 bg-white shadow-2xl text-black rounded-lg w-5/6 xl:w-1/4 p-5 m-5'>
+                        <a href={b[5]} target="_blank">
+                            <img className='rounded-lg hover:opacity-70 w-full' src={b[3]}
+                                alt="project picture" />
+                        </a>
+                        <h1 className='big-title2 text-center mt-4'>{b[0]}</h1>
+                        <small className='absolute right-3'>{b[1]}</small>
+                        <p className='my-5 p-2 rounded-lg'>{b[2]}</p>
+                        <ul className='flex flex-wrap justify-center my-8'>{b[4].map((item, i) =>
+                            <li className='stack-buttons text-black' key={i++}>{item}</li>)}
+                        </ul>
+                        <div className='absolute bottom-3 inset-x-0 mx-auto'>
+                            <a className='rounded-full bg-blue-800 px-4 py-2 text-white text-xl' href={b[5]} target="_blank">{t.seeProject}</a>
+                        </div>
+                    </div>
+                ))}
             </div>
-        </>
+        </div>
     )
 }

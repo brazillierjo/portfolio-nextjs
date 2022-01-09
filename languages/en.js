@@ -56,5 +56,10 @@ export default {
     diploma6period: '2012',
     diploma6place: 'Mairie - La Londe les Maures',
     // portfolio section
-    waletoo_description: 'Waletoo.fr is a web application that will help you manage your finances. Simple and efficient. After having created an account, all you have to do is enter your expenses and incomes. The application then generates all kinds of calculations and graphs as well as advice to better manage your finances. ⚠️ project under development ⚠️ ',
+    titlePortfolio: 'My personal projects',
+    waletoo_description: 'Waletoo is a web application that will help you manage your finances. Simple and efficient. After having created an account, all you have to do is enter your expenses and incomes. The application then generates all kinds of calculations and graphs as well as advice to better manage your finances. ⚠️ project under development ⚠️ ',
+    vitassurance_description: 'Insurance brokerage website allowing you to quickly compare the offers of different insurers. Once the form has been completed by the visitor, their information is sent via an API to a CRM in order to manage the new customer\'s file.',
+    calculator_description: 'Project carried out in order to deepen my knowledge of Vanilla JavaScript. You can choose between basic calculations or advanced calculations. Learning of light / night mode.',
+    markdown_description: 'Markdown made for React training. Deployed on GitHub Pages.',
+    seeProject: 'See the project',
 }
