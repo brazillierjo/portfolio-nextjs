@@ -32,8 +32,6 @@ export default function Home() {
         <div className='dark:bg-slate-900 dark:text-white'>
 
           <div className='flex justify-center text-xs'>
-            <a className='my-1 mx-3' href='mailto:j.brazillier@gmail.com'>j.brazillier@gmail.com</a>
-            <a className='my-1 mx-3' href='tel:+33638027649'>+33(0)6.38.02.76.49</a>
             <div className='flex justify-center mx-3'>
               {isDark ? <img className='dark-icons' src="/assets/sun.gif" alt="" /> : ""}
               <Switch onClick={() => !setIsDark(!isDark)} label='night-mode' color='secondary' size='small' />

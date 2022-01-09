@@ -28,7 +28,7 @@ export default function Presentation() {
                 </div>
             </div>
             <div className='md:w-2/3 m-5'>
-                <h1 className='big-title2 text-center md:text-left font-extrabold'>RINCON-BRAZILLIER Johan</h1>
+                <h1 className='big-title2 text-left md:text-center` font-extrabold'>RINCON BRAZILLIER Johan</h1>
 
                 <h2 className='flex big-title2 my-4 text-center md:text-left'>{t.job}</h2>
 

@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import fr from '../../languages/fr'
 import en from '../../languages/en'
 
-export default function Example() {
+export default function NavBar() {
 
     const router = useRouter()
     const { locale } = router
