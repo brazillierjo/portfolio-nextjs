@@ -31,7 +31,7 @@ export default function Home() {
       <main className={isDark ? 'dark' : ''}>
         <div className='dark:bg-slate-900 dark:text-white'>
 
-          <div className='flex justify-center text-xs'>
+          <div className='flex justify-center text-sm py-2'>
             <div className='flex justify-center mx-3'>
               {isDark ? <img className='dark-icons' src="/assets/sun.gif" alt="" /> : ""}
               <Switch onClick={() => !setIsDark(!isDark)} label='night-mode' color='secondary' size='small' />
@@ -45,10 +45,6 @@ export default function Home() {
               </select>
             </div>
           </div>
-
-
-
-
 
           <HeroSection />
           <Presentation />

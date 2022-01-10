@@ -36,8 +36,18 @@ export default function Presentation() {
                 <p className='my-2'>{t.catchphrase2}</p>
 
                 <p className='mt-12'>{t.presentation}</p>
-                <p className='mt-12'>{t.emailme} <a className='italic text-gray-700 dark:text-gray-300' href="mailto:j.brazillier@gmail.com">j.brazillier@gmail.com</a></p>
-                <p>{t.phoneme} <a className='italic text-sm text-gray-700 dark:text-gray-300' href="tel:+33678901234">+33 6 38 02 76 49</a></p>
+
+                <div className='mt-6'>
+                    <div className='flex justify-start'>
+                        <p className='mr-2'>{t.emailme} </p>
+                        <a className='italic text-gray-700 dark:text-gray-300' href="mailto:j.brazillier@gmail.com">j.brazillier@gmail.com</a>
+                    </div>
+                    <div className='flex justify-start'>
+                        <p className='mr-2'>{t.phoneme}</p>
+                        <a className='italic text-sm text-gray-700 dark:text-gray-300' href="tel:+33678901234">+33 6 38 02 76 49</a>
+                    </div>
+                </div>
+
                 <div className='block md:hidden mt-12'>
                     <div className='flex justify-center'>
                         <a target="_blank" href="https://github.com/brazillierjo?tab=repositories">
