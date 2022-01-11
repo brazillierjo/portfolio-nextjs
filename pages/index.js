@@ -10,16 +10,10 @@ import Switch from '@mui/material/Switch';
 export default function Home() {
 
   const [isDark, setIsDark] = useState(false)
-  const [isFrench, setIsFrench] = useState(true)
 
-  useEffect(() => {
-    if (isFrench) {
-      console.log('true')
-    } else {
-      console.log('false')
-    }
-  }, [isFrench])
-
+  const setFrench = () => {
+    console.log('test')
+  }
 
   return (
     <div>
@@ -45,9 +39,9 @@ export default function Home() {
                 <Switch onClick={() => !setIsDark(!isDark)} label='night-mode' color='warning' size='small' />
               </div>
               <div>
-                <select className='dark:bg-slate-900 dark:text-white py-1' name="lang" id="lang">
-                  <option value="fr" onChange={() => setIsFrench()}>FR 🇫🇷</option>
-                  <option value="en" onChange={() => setIsFrench()}>EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
+                <select onChange={setFrench()} className='dark:bg-slate-900 dark:text-white py-1' name="lang" id="lang">
+                  <option value="fr">FR 🇫🇷</option>
+                  <option value="en">EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
                 </select>
               </div>
             </div>
