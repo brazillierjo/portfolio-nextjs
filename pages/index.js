@@ -14,11 +14,12 @@ export default function Home() {
 
   useEffect(() => {
     if (isFrench) {
-      setIsFrench(true)
+      console.log('true')
     } else {
-      setIsFrench(false)
+      console.log('false')
     }
   }, [isFrench])
+
 
   return (
     <div>
@@ -31,19 +32,26 @@ export default function Home() {
       <main className={isDark ? 'dark' : ''}>
         <div className='dark:bg-slate-900 dark:text-white'>
 
-          <div className='flex justify-center text-sm py-2'>
-            <div className='flex justify-center mx-3'>
-              {isDark ? <img className='dark-icons' src="/assets/sun.gif" alt="" /> : ""}
-              <Switch onClick={() => !setIsDark(!isDark)} label='night-mode' color='secondary' size='small' />
-              {isDark ? "" : <img className='dark-icons' src="/assets/moon.gif" alt="" />}
+          <div className='flex justify-evenly text-xs'>
+
+            <div className='hidden md:flex space-x-8 py-1'>
+              <a className='text-xs py-1' href="mailto:j.brazillier@gmail.com">j.brazillier@gmail.com</a>
+              <a className='text-xs py-1' href="tel:+33638027649">+33(0)6.38.02.76.49</a>
             </div>
-            <div className='flex mx-3'>
-              <label htmlFor="lang"></label>
-              <select className='dark:bg-slate-900 dark:text-white' name="lang" id="lang">
-                <option value="fr" onChange={() => setIsFrench(true)}>FR 🇫🇷</option>
-                <option value="en" onChange={() => setIsFrench(false)}>EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
-              </select>
+
+            <div className='flex space-x-8 py-1'>
+              <div className='flex space-x-2'>
+                <p className='py-1'>{isDark ? 'Night mode' : 'Light mode'}</p>
+                <Switch onClick={() => !setIsDark(!isDark)} label='night-mode' color='warning' size='small' />
+              </div>
+              <div>
+                <select className='dark:bg-slate-900 dark:text-white py-1' name="lang" id="lang">
+                  <option value="fr" onChange={() => setIsFrench()}>FR 🇫🇷</option>
+                  <option value="en" onChange={() => setIsFrench()}>EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
+                </select>
+              </div>
             </div>
+
           </div>
 
           <HeroSection />

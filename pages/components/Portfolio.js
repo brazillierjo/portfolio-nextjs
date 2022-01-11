@@ -49,7 +49,7 @@ export default function Portfolio() {
             <h1 id='projects' className='big-title2 text-center my-4'>{t.titlePortfolio}</h1>
             <div className='flex flex-wrap justify-evenly'>
                 {Object.entries(projects).map(([a, b], i) => (
-                    <div className='relative border-white-500 bg-white shadow-2xl text-black rounded-lg w-5/6 xl:w-1/4 p-5 m-5'>
+                    <div className='relative border-white-500 bg-white shadow-2xl text-black rounded-lg w-full md:w-2/5 p-5 m-5'>
                         <a href={b[5]} target="_blank">
                             <img className='rounded-lg hover:opacity-70 w-full' src={b[3]}
                                 alt="project picture" />
@@ -60,7 +60,7 @@ export default function Portfolio() {
                         <ul className='flex flex-wrap justify-center my-8'>{b[4].map((item, i) =>
                             <li className='stack-buttons text-black' key={i++}>{item}</li>)}
                         </ul>
-                        <div className='absolute bottom-3 inset-x-0 mx-auto'>
+                        <div className='text-center'>
                             <a className='rounded-full bg-blue-800 px-4 py-2 text-white text-xl' href={b[5]} target="_blank">{t.seeProject}</a>
                         </div>
                     </div>

@@ -101,20 +101,20 @@ hr:after {
 
 /* ICONS */
 .icons-size {
-    width: 45px;
-    height: 45px;
-    opacity: 0.8;
-    background-color: white;
-    border-radius: 50%;
-    border: 1px solid black;
-    padding: 0.2rem;
+	width: 45px;
+	height: 45px;
+	opacity: 0.8;
+	background-color: white;
+	border-radius: 50%;
+	border: 1px solid black;
+	padding: 0.2rem;
 }
 .icons-size:hover {
     opacity: 1;
     cursor: pointer;
 }
 .logo-skills {
-	height: 120px;
+	height: 100px;
 	background-color: rgb(255, 255, 255);
 	margin: 6px;
 	padding: 8px;
