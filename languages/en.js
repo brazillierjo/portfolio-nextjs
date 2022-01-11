@@ -1,4 +1,6 @@
 export default {
+    //index section
+    lang: 'Switch language',
     //navbar
     hello: 'Hello World !',
     whoami: 'Who am I ?',

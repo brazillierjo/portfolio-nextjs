@@ -125,6 +125,10 @@ hr:after {
 	transform: translateY(-10px);
 }
 
+.dropdown:hover .dropdown-menu {
+	display: block;
+  }
+
 
 /* HERO ANIMATION */
 .forest {

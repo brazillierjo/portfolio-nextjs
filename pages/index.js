@@ -1,19 +1,29 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
 import Presentation from './components/Presentation'
 import HeroSection from './components/HeroSection'
 import Skills from './components/Skills'
 import CV from './components/CV'
 import Portfolio from './components/Portfolio'
-import Switch from '@mui/material/Switch';
+import Switch from '@mui/material/Switch'
+import { useRouter } from 'next/router'
+import fr from '../languages/fr'
+import en from '../languages/en'
+
+import { Fragment } from 'react'
+import { Menu, Transition } from '@headlessui/react'
+import { ChevronDownIcon } from '@heroicons/react/solid'
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
 
 export default function Home() {
-
   const [isDark, setIsDark] = useState(false)
 
-  const setFrench = () => {
-    console.log('test')
-  }
+  const router = useRouter()
+  const { locale } = router
+  const t = locale === 'fr' ? fr : en
 
   return (
     <div>
@@ -38,13 +48,29 @@ export default function Home() {
                 <p className='py-1'>{isDark ? 'Night mode' : 'Light mode'}</p>
                 <Switch onClick={() => !setIsDark(!isDark)} label='night-mode' color='warning' size='small' />
               </div>
-              <div>
-                <select onChange={setFrench()} className='dark:bg-slate-900 dark:text-white py-1' name="lang" id="lang">
-                  <option value="fr">FR 🇫🇷</option>
-                  <option value="en">EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
-                </select>
-              </div>
+              <Menu as="div" className="py-1 inline-block text-left">
+                <div>
+                  <Menu.Button className="px-2 inline-flex justify-center rounded-md text-xs">
+                    {t.lang}
+                    <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
+                  </Menu.Button>
+                </div>
+
+                <Menu.Items className="absolute">
+                  <div className='pt-4'>
+                    <Menu.Item>
+                      <a href="http://localhost:3000/fr" className='mr-4 bg-gray-100 text-gray-900 px-4 py-2 text-sm rounded-md hover:bg-gray-300'>FR 🇫🇷</a>
+                    </Menu.Item>
+                    <Menu.Item>
+                      <a href="http://localhost:3000/en" className='bg-gray-100 text-gray-900 px-4 py-2 text-sm rounded-md hover:bg-gray-300'>EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿</a>
+                    </Menu.Item>
+                  </div>
+                </Menu.Items>
+              </Menu>
             </div>
+
+
+
 
           </div>
 
@@ -61,9 +87,8 @@ export default function Home() {
             xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28 "
             preserveAspectRatio="none">
-            <defs>
-              <path id="gentle-wave"
-                d="M-160 44c30 0 
+            <defs><path id="gentle-wave"
+              d="M-160 44c30 0 
                   58-18 88-18s
                   58 18 88 18 
                   58-18 88-18 
