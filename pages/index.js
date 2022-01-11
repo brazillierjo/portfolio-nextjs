@@ -9,9 +9,7 @@ import Switch from '@mui/material/Switch'
 import { useRouter } from 'next/router'
 import fr from '../languages/fr'
 import en from '../languages/en'
-
-import { Fragment } from 'react'
-import { Menu, Transition } from '@headlessui/react'
+import { Menu } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
 function classNames(...classes) {
@@ -59,10 +57,10 @@ export default function Home() {
                 <Menu.Items className="absolute">
                   <div className='pt-4'>
                     <Menu.Item>
-                      <a href="http://localhost:3000/fr" className='mr-4 bg-gray-100 text-gray-900 px-4 py-2 text-sm rounded-md hover:bg-gray-300'>FR 🇫🇷</a>
+                      <a href="https://brazillierjohan.fr/fr" className='mr-4 bg-gray-100 text-gray-900 px-4 py-2 text-sm rounded-md hover:bg-gray-300'>FR 🇫🇷</a>
                     </Menu.Item>
                     <Menu.Item>
-                      <a href="http://localhost:3000/en" className='bg-gray-100 text-gray-900 px-4 py-2 text-sm rounded-md hover:bg-gray-300'>EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿</a>
+                      <a href="https://brazillierjohan.fr/en" className='bg-gray-100 text-gray-900 px-4 py-2 text-sm rounded-md hover:bg-gray-300'>EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿</a>
                     </Menu.Item>
                   </div>
                 </Menu.Items>
