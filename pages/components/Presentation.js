@@ -38,11 +38,11 @@ export default function Presentation() {
                 <p className='mt-12'>{t.presentation}</p>
 
                 <div className='mt-6'>
-                    <div className='flex justify-center md:justify-start'>
+                    <div className='flex md:justify-start justify-center'>
                         <p className='md:mr-2'>{t.emailme} </p>
                         <a className='italic text-gray-700 dark:text-gray-300' href="mailto:j.brazillier@gmail.com">j.brazillier@gmail.com</a>
                     </div>
-                    <div className='flex justify-start'>
+                    <div className='flex md:justify-start justify-center'>
                         <p className='mr-2'>{t.phoneme}</p>
                         <a className='italic text-sm text-gray-700 dark:text-gray-300' href="tel:+33678901234">+33 6 38 02 76 49</a>
                     </div>
