@@ -34,20 +34,20 @@ export default function Home() {
       <main className={isDark ? 'dark' : ''}>
         <div className='dark:bg-slate-900 dark:text-white'>
 
-          <div className='flex justify-evenly text-xs'>
+          <div className='flex justify-evenly text-xs pt-1'>
 
-            <div className='hidden md:flex space-x-8 py-1'>
-              <a className='text-xs py-1' href="mailto:j.brazillier@gmail.com">j.brazillier@gmail.com</a>
-              <a className='text-xs py-1' href="tel:+33638027649">+33(0)6.38.02.76.49</a>
+            <div className='hidden md:flex space-x-8'>
+              <a className='text-xs' href="mailto:j.brazillier@gmail.com">j.brazillier@gmail.com</a>
+              <a className='text-xs' href="tel:+33638027649">+33(0)6.38.02.76.49</a>
             </div>
 
-            <div className='flex space-x-8 py-1'>
+            <div className='flex space-x-8'>
               <div className='flex space-x-2'>
-                <p className='py-1'>{isDark ? 'Night mode' : 'Light mode'}</p>
+                <p>{isDark ? 'Night mode' : 'Light mode'}</p>
                 <Switch onClick={() => !setIsDark(!isDark)} label='night-mode' color='warning' size='small' />
               </div>
 
-              <Menu as="div" className="py-1 inline-block text-left noSelect">
+              <Menu as="div" className="inline-block text-left noSelect">
                 <div>
                   <Menu.Button className="px-2 inline-flex justify-center rounded-md text-xs noSelect">
                     {t.lang}
@@ -58,10 +58,10 @@ export default function Home() {
                 <Menu.Items className="absolute z-50 noSelect">
                   <div>
                     <Menu.Item>
-                      <a href="https://brazillierjohan.fr/fr" className='noSelect border mr-2 bg-white text-gray-900 px-2 py-1 text-sm rounded-md hover:bg-gray-300'>FR 🇫🇷</a>
+                      <a href="https://brazillierjohan.fr/fr" className='noSelect border mr-2 bg-white text-gray-900 px-2 text-sm rounded-md hover:bg-gray-300'>FR 🇫🇷</a>
                     </Menu.Item>
                     <Menu.Item>
-                      <a href="https://brazillierjohan.fr/en" className='noSelect border bg-white text-gray-900 px-2 py-1 text-sm rounded-md hover:bg-gray-300'>EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿</a>
+                      <a href="https://brazillierjohan.fr/en" className='noSelect border bg-white text-gray-900 px-2 text-sm rounded-md hover:bg-gray-300'>EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿</a>
                     </Menu.Item>
                   </div>
                 </Menu.Items>

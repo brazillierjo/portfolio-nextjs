@@ -11,7 +11,7 @@ export default function NavBar() {
     const t = locale === 'fr' ? fr : en
 
     return (
-        <Disclosure as="nav" className="text-black dark:text-white bg-white dark:bg-gray-900 sm:mx-4 mt-2 rounded-md">
+        <Disclosure as="nav" className="text-black dark:text-white bg-white dark:bg-gray-900 sm:mx-24 mt-4 rounded-md">
             {({ open }) => (
                 <>
                     <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -41,7 +41,7 @@ export default function NavBar() {
 
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <span className="sr-only"></span>
-                                <img className='float h-16 md:h-28 md:w-28 bg-orange-300 mr-2 rounded-full borderAvatar' src="/assets/web.png" alt="avatar" />
+                                <img className='float h-16 md:h-24 md:w-24 bg-orange-300 mr-2 rounded-full borderAvatar' src="/assets/web.png" alt="avatar" />
                             </div>
                         </div>
                     </div>
