@@ -54,22 +54,18 @@ export default function Home() {
                   </Menu.Button>
                 </div>
 
-                <Menu.Items className="absolute">
-                  <div className='pt-4'>
+                <Menu.Items className="absolute z-50">
+                  <div>
                     <Menu.Item>
-                      <a href="https://brazillierjohan.fr/fr" className='mr-4 bg-gray-100 text-gray-900 px-4 py-2 text-sm rounded-md hover:bg-gray-300'>FR 🇫🇷</a>
+                      <a href="https://brazillierjohan.fr/fr" className='border mr-2 bg-white text-gray-900 px-2 py-1 text-sm rounded-md hover:bg-gray-300'>FR 🇫🇷</a>
                     </Menu.Item>
                     <Menu.Item>
-                      <a href="https://brazillierjohan.fr/en" className='bg-gray-100 text-gray-900 px-4 py-2 text-sm rounded-md hover:bg-gray-300'>EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿</a>
+                      <a href="https://brazillierjohan.fr/en" className='border bg-white text-gray-900 px-2 py-1 text-sm rounded-md hover:bg-gray-300'>EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿</a>
                     </Menu.Item>
                   </div>
                 </Menu.Items>
               </Menu>
             </div>
-
-
-
-
           </div>
 
           <HeroSection />
