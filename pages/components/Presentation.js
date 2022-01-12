@@ -44,7 +44,7 @@ export default function Presentation() {
                     </div>
                     <div className='flex md:justify-start justify-center'>
                         <p className='mr-2'>{t.phoneme}</p>
-                        <a className='italic text-sm text-gray-700 dark:text-gray-300' href="tel:+33678901234">+33 6 38 02 76 49</a>
+                        <a className='italic text-sm text-gray-700 dark:text-gray-300' href="tel:+33638027649">+33 6 38 02 76 49</a>
                     </div>
                 </div>
 

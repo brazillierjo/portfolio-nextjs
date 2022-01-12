@@ -38,7 +38,7 @@ export default function Home() {
 
             <div className='hidden md:flex space-x-8 py-1'>
               <a className='text-xs py-1' href="mailto:j.brazillier@gmail.com">j.brazillier@gmail.com</a>
-              <a className='text-xs py-1' href="tel:0638027649">+33(0)6.38.02.76.49</a>
+              <a className='text-xs py-1' href="tel:+33638027649">+33(0)6.38.02.76.49</a>
             </div>
 
             <div className='flex space-x-8 py-1'>
