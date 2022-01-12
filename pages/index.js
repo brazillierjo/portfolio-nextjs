@@ -46,21 +46,22 @@ export default function Home() {
                 <p className='py-1'>{isDark ? 'Night mode' : 'Light mode'}</p>
                 <Switch onClick={() => !setIsDark(!isDark)} label='night-mode' color='warning' size='small' />
               </div>
-              <Menu as="div" className="py-1 inline-block text-left">
+
+              <Menu as="div" className="py-1 inline-block text-left noSelect">
                 <div>
-                  <Menu.Button className="px-2 inline-flex justify-center rounded-md text-xs">
+                  <Menu.Button className="px-2 inline-flex justify-center rounded-md text-xs noSelect">
                     {t.lang}
                     <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
                   </Menu.Button>
                 </div>
 
-                <Menu.Items className="absolute z-50">
+                <Menu.Items className="absolute z-50 noSelect">
                   <div>
                     <Menu.Item>
-                      <a href="https://brazillierjohan.fr/fr" className='border mr-2 bg-white text-gray-900 px-2 py-1 text-sm rounded-md hover:bg-gray-300'>FR 🇫🇷</a>
+                      <a href="https://brazillierjohan.fr/fr" className='noSelect border mr-2 bg-white text-gray-900 px-2 py-1 text-sm rounded-md hover:bg-gray-300'>FR 🇫🇷</a>
                     </Menu.Item>
                     <Menu.Item>
-                      <a href="https://brazillierjohan.fr/en" className='border bg-white text-gray-900 px-2 py-1 text-sm rounded-md hover:bg-gray-300'>EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿</a>
+                      <a href="https://brazillierjohan.fr/en" className='noSelect border bg-white text-gray-900 px-2 py-1 text-sm rounded-md hover:bg-gray-300'>EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿</a>
                     </Menu.Item>
                   </div>
                 </Menu.Items>
