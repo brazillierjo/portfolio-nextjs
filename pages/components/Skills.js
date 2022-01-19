@@ -27,6 +27,7 @@ export default function Skills() {
                 <img className='logo-skills' src="/assets/logos/mongo.png" alt="mongo logo" />
                 <img className='logo-skills' src="/assets/logos/firebase.png" alt="firebase logo" />
                 <img className='logo-skills' src="/assets/logos/github.png" alt="github logo" />
+                <img className='logo-skills' src="/assets/logos/docker.png" alt="docker logo" />
             </div>
 
         </div>
