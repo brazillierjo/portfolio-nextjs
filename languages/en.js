@@ -12,7 +12,7 @@ export default {
     job: 'Web Developer',
     catchphrase: '28 years old Web Developer, expert in React 🔥',
     catchphrase2: 'I love to create beautiful, functional and dynamic websites !',
-    presentation: "Currently Web Developer for an insurance agency and freelancer, connected to the Web by passion. I am an organized person who pays a lot of attention to details. Winner of the contest 'break the codes' (2020), here is my portfolio.",
+    presentation: "Currently freelance Web Developer, connected to the Web by passion. I am an organized person who pays a lot of attention to details. Winner of the contest 'break the codes' (2020), here is my portfolio.",
     emailme: '📩 Email :',
     phoneme: '📱 Phone :',
     // CV section
@@ -20,14 +20,14 @@ export default {
     about: 'About me',
     cv_presentation: 'I started studying after a High School diploma. From little jobs to little jobs, I quickly understood that this context was not enough. I have then re-started my studies at 21 years old for a Licence in e-commerce ! These studies have given me the opportunity to be SEO for 6 years ! This experience has taught me the way of the professional world, the teamwork and the responsibility weight but also the management of a back-office and SEO/SEA.',
     cv_presentation2: 'As a SEO, working in close collaboration with developers has given me the chance to dive into this technical world. I offered myself a bootcamp of 6 months for acquiring the basics of web programming and code writing. After this, I have continued my learning in the form of an internship with a Licence Integrator/Developer Web and mobile with React and NodeJs !',
-    cv_presentation3: 'Now, I am a full-stack developer for an insurance agency and a freelance developer.',
+    cv_presentation3: 'Now, I am a full-stack freelance developer.',
     diplomas: 'Diplomas',
     experiences: 'Experiences',
     // skills section
     skills2: 'What are my skills ?',
     // experience section
     job1: 'FullStack Developer',
-    period1: '2021 - now',
+    period1: '2021 - 2022',
     details1: 'Creation of the website vitassurance.fr. API calls to an extern CRM to handle customers/leads.',
     job2: 'Web Analyst (6 years)',
     period2: '2014 - 2020',
@@ -36,6 +36,9 @@ export default {
     period3: '2011 - 2014',
     details3: 'Warehouse handler - Animator - Specialised seller',
     stack: 'Used Stack :',
+    job4: 'Freelance Web Developer',
+    period4: '2022 - now',
+    details4: 'Several front integrations and connection with API made for companies like Appyness or Medialeads.',
     // diploma section
     diploma1: 'Integrator/Web Developer & mobile',
     diploma1details: 'Speciality React and NodeJs',
@@ -64,4 +67,5 @@ export default {
     calculator_description: 'Project carried out in order to deepen my knowledge of Vanilla JavaScript. You can choose between basic calculations or advanced calculations. Learning of light / night mode.',
     markdown_description: 'Markdown made for React training. Deployed on GitHub Pages.',
     seeProject: 'See the project',
+
 }

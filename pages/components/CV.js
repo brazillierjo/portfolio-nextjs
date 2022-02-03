@@ -21,6 +21,24 @@ export default function CV() {
                 <h1 className='big-title2 text-center my-4'>{t.experiences}</h1>
                 <div className="md:w-2/3 mx-auto mb-12 p-5">
                     <div className='m-2 bg-gray-100 dark:bg-gray-600 rounded-md p-6'>
+                        <p className='font-black'>{t.job4}</p>
+                        <p className='text-gray-500 dark:text-gray-300 italic'>{t.period4}</p>
+                        <p className='italic'>{t.details4}</p>
+                        <div>
+                            <p className='mt-4'>{t.stack}</p>
+                            <ul className='flex flex-wrap my-2'>
+                                <li className='stack-buttons text-black'>HTML</li>
+                                <li className='stack-buttons text-black'>CSS</li>
+                                <li className='stack-buttons text-black'>JavaScript</li>
+                                <li className='stack-buttons text-black'>React</li>
+                                <li className='stack-buttons text-black'>VueJs</li>
+                                <li className='stack-buttons text-black'>NodeJs</li>
+                                <li className='stack-buttons text-black'>Express</li>
+                                <li className='stack-buttons text-black'>TailwindCSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className='m-2 bg-gray-100 dark:bg-gray-600 rounded-md p-6'>
                         <p className='font-black'>{t.job1}</p>
                         <p className='text-gray-500 dark:text-gray-300 italic'>{t.period1}</p>
                         <p className='italic'>{t.details1}</p>

@@ -12,7 +12,7 @@ export default {
     job: 'Développeur Web',
     catchphrase: 'Développeur FullStack de 28 ans, spécialisé React 🔥',
     catchphrase2: 'Je suis passionné par la création de beaux sites web fonctionnels et dynamiques !',
-    presentation: "Actuellement Développeur Web pour une agence de courtage d\'assurance et développeur free-lance, connecté au Web par passion. Je suis une personne organisée qui prête beaucoup d\'attention au détail. Lauréat du concours qui casse les codes (2020), voici mon portfolio.",
+    presentation: "Actuellement Développeur Web free-lance, connecté au Web par passion. Je suis une personne organisée qui prête beaucoup d\'attention au détail. Lauréat du concours qui casse les codes (2020), voici mon portfolio.",
     emailme: '📩 Mail :',
     phoneme: '📱 Téléphone :',
     // CV section
@@ -20,14 +20,14 @@ export default {
     about: 'À propos de moi',
     cv_presentation: 'J\'ai d\'abord arrêté les études après un Baccalauréat Technologique. De petits boulots en petits boulots, j\'ai rapidement compris que ce contexte ne me suffirait pas. J\'ai donc repris mes études à 21 ans pour une licence en e-commerce ! Ces études m\'ont permis d\'exercer pendant 6 ans en tant que SEO ! Cette expérience m\'a appris le fonctionnement du monde professionnel, le travail en équipe ainsi que le poids des responsabilités mais également la gestion d\'un back office et d\'un référencement naturel.',
     cv_presentation2: 'En tant que SEO, travailler en étroite collaboration avec des développeurs m\'a donné envie de me plonger dans ce monde très technique. Je me suis donc offert une formation bootcamp de 6 mois pour acquérir les bases de la programmation web et de l\'écriture de code. Suite à cela, j\'ai poursuivi mon apprentissage en alternance avec une Licence Intégrateur/Développeur d\'Applications Web et mobile avec spécialité React et NodeJs !',
-    cv_presentation3: 'Aujourd\'hui, je suis développeur full-stack pour une agence de courtage d\'assurance et développeur freelance.',
+    cv_presentation3: 'Aujourd\'hui, je suis développeur full-stack freelance.',
     diplomas: 'Diplômes',
     experiences: 'Experiences',
     // skills section
     skills2: 'Quelles sont mes compétences ?',
     // experience section
     job1: 'Développeur FullStack',
-    period1: '2021 - aujourd\'hui',
+    period1: '2021 - 2022',
     details1: 'Création du site web vitassurance.fr de la maquette au code. Gestion d\'une API connectée à un CRM pour la gestion des leads.',
     job2: 'Web Analyste (6 ans)',
     period2: '2014 - 2020',
@@ -36,6 +36,9 @@ export default {
     period3: '2011 - 2014',
     details3: 'Manutentionnaire - Animation - Vendeur spécialisé - Gondolier',
     stack: 'Stack utilisée :',
+    job4: 'Développeur Web free-lance',
+    period4: '2022',
+    details4: 'Plusieurs intégraations front et connexion avec API réalisée pour des sociétés comme Appyness ou Medialeads.',
     // diploma section
     diploma1: 'Intégrateur/Développeur Web et mobile - Equivalent Licence 3',
     diploma1details: 'Spécialisation React et NodeJs',
