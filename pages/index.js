@@ -17,7 +17,7 @@ function classNames(...classes) {
 }
 
 export default function Home() {
-  const [isDark, setIsDark] = useState(false)
+  const [isDark, setIsDark] = useState(true)
 
   const router = useRouter()
   const { locale } = router
