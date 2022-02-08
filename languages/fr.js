@@ -38,7 +38,7 @@ export default {
     stack: 'Stack utilisée :',
     job4: 'Développeur Web free-lance',
     period4: '2022',
-    details4: 'Plusieurs intégraations front et connexion avec API réalisée pour des sociétés comme Appyness ou Medialeads.',
+    details4: 'Plusieurs intégrations front et connexion avec API.',
     // diploma section
     diploma1: 'Intégrateur/Développeur Web et mobile - Equivalent Licence 3',
     diploma1details: 'Spécialisation React et NodeJs',
